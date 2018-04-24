@@ -22,7 +22,7 @@ main:
 _loop:  
     push ecx                                ;save ecx, because invoke StdOut make changes to it
     push edx                                ;save edx; same reason
-    mov ebp, esp                            ;saving that address to esp from esp which stores pointer to top of the stack,
+    mov ebp, esp                            ;saving that address to ebp from esp which stores pointer to top of the stack,
                                             ;in current case address of edx stored value
                                             
     invoke StdOut, ebp                      ;ebp stored the latest pointer
